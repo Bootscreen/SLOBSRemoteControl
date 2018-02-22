@@ -3,6 +3,8 @@ Named Pipe Client for SLOBS
 
 This software is distributed "as is", with no warranty expressed or implied, and no guarantee for accuracy or applicability to any purpose.
 
+To use this Client you need to activate the Named Pipe Api. To do this you must start SLOBS with " --adv-settings" Parameter, go to Settings and under API activate the Named Pipe.
+
 -h : Shows this Help
 
 -g : Shows the Config Gui
