@@ -22,7 +22,18 @@ This is currently untested because i haven't acces to an other PC in my network.
 -a : Audio Source to toggle
 
 
+Examples:
+Switch Scene to "Idle Scene":
+SLOBSRemoteControl.exe -mswitch_scene -s"Idle Scene"
 
+Toggle Source "Background Wallpaper" in Scene "Idle Scene":
+SLOBSRemoteControl.exe -mtoggle_source -s"Idle Scene" -i"Background Wallpaper"
+
+Toggle Source "Background Wallpaper" in current active scene:
+SLOBSRemoteControl.exe -mtoggle_source -i"Background Wallpaper"
+
+Toggle Audio Source "Sound":
+SLOBSRemoteControl.exe -mtoggle_audio -a"Sound"
 
 
 You like it and want to support me? Leave a follow on Twitch (http://twitch.bootscreen.net) or when you want to support me more you can donate here (https://www.paypal.me/TwitchBootscreen/5)
