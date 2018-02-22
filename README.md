@@ -7,6 +7,7 @@ To use this Client you need to activate the Named Pipe Api. To do this you must 
 
 For remote access use this as Named pipe under config: \\<PC-Name>\pipe\<PipeName>
 where PC-Name is the Hostname where SLOBS run and PipeName is the name which is set in SLOBS (default: slobs) 
+This is currently untested because i haven't acces to an other PC in my network.
 
 -h : Shows this Help
 
