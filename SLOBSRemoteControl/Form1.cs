@@ -38,7 +38,7 @@ namespace SLOBSRemoteControl
         {
             string payload = "{ \"jsonrpc\": \"2.0\",\"id\": 1,\"method\": \"getSceneByName\",\"params\": {\"resource\": \"ScenesService\",\"args\": [\"" + textBox2.Text + "\"]}}";
 
-            //Client
+            //Client 
             var client = new NamedPipeClientStream("slobs");
             client.Connect();
             StreamReader reader = new StreamReader(client);

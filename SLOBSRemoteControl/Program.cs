@@ -38,10 +38,17 @@ namespace SLOBSRemoteControl
             {
                 string mode = "";
                 string scene = "";
+                string item = "";
                 foreach (string arg in args)
                 {
                     switch (arg.Substring(0, 2).ToUpper())
                     {
+                        case "-H":
+                            mode = "help";
+                            break;
+                        case "-G":
+                            mode = "gui";
+                            break;
                         case "-M":
                             mode = arg.Substring(2);
                             break;
@@ -54,11 +61,20 @@ namespace SLOBSRemoteControl
                         case "-S ":
                             scene = arg.Substring(3);
                             break;
+                        case "-I":
+                            scene = arg.Substring(2);
+                            break;
+                        case "-I ":
+                            scene = arg.Substring(3);
+                            break;
                     }
                 }
 
                 switch (mode)
                 {
+                    case "help":
+                        //TODO
+                        break;
                     case "gui":
                         Application.Run(new Form1());
                         break;
